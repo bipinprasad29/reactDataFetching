@@ -1,0 +1,135 @@
+:root{
+  --title-background: #224970;
+  --hover-background: #c1c8ce;
+  --background-color: #8951fc;
+  --image-background: #2f2fa1;
+}
+
+
+*,html{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: var(--background-color);
+}
+
+.title{
+  padding: 5px;
+  text-align: center;
+  background: var(--title-background);
+}
+
+.container{
+width: 100vw; 
+height: 80vh;
+display: flex;
+background-color: var(--background-color);
+justify-content: space-between;
+overflow: hidden;
+}
+
+.employNamelist{
+  width: 350px;
+  border: 1px solid black;
+  border-top: none;
+  padding: 10px 20px;
+}
+.searchbar{
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 5px;
+  font-size: 1.2rem;
+  background-color: transparent;
+  border-bottom: 1px solid black;
+
+}
+
+.searchbar::placeholder{
+  color: #000;
+}
+
+.employ{
+  overflow-y: scroll;
+  height: 65vh;
+  margin: auto;
+}
+
+.titleContainer{
+  width: 90%;
+  display: flex;
+  margin: 5px 0;
+  padding: 5px;
+  justify-content: space-between;
+ 
+}
+
+.employName{
+font-size: 1rem;
+cursor: pointer;
+}
+
+.button{
+background-color: rgb(250, 113, 71);
+border-radius: 10px;
+padding: 5px;
+cursor: pointer;
+}
+.employDetail{
+width: 100%;
+}
+
+.titleContainer:hover{
+background-color: var(--hover-background);
+}
+
+.employeeDetails{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empImage{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--image-background);
+}
+.name{
+  margin: 10px auto;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+  .title{
+    font-size: 1.5rem;
+  }
+  .container{
+    width: 100vw; 
+    height: auto;
+    flex-direction: column;
+    }
+    .employNamelist{
+      width: 100vw;
+      height: auto;
+      padding: 10px 2px;
+    }
+    .employ{
+      overflow-y: scroll;
+      height: 150px;
+      margin: 0;
+    }
+    .employeeDetails{
+      margin: 20px 0;
+    }
+   
+    
+}
